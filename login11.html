@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my first web page using java script</title>
+	<style type="text/css">
+		.iv{border-style: solid;border-color:blue;border-radius: 20px;width: 30%;}
+		
+	</style>
+	<script type="text/javascript">
+		function check()
+		 {
+			var a=document.getElementById("n1").value;
+			var b=document.getElementById("n2").value;
+			if(a=="" || b=="")
+				{
+			document.getElementById("n3").style.color="red";
+			document.getElementById("n3").innerHTML="please fill the data";
+		}
+		else
+		{
+			document.getElementById("n3").style.color="green";
+
+			document.getElementById("n3").innerHTML="congratulation LOGIN successfully ";
+		}
+		}
+		
+	</script>
+</head>
+<body> 
+	
+		<center><div class="iv"><table cellspacing="20"><form><tr><td>Username</td>
+		<td><input id="n1" type="text" placeholder="Username"></td></tr>
+		<tr><td>Password</td>
+		<td><input id="n2" type="text" placeholder="Password"></td></tr>
+     	<tr><td><div id="n3"></div></td></tr>
+	<tr><th colspan="2"><button onclick="check()">LOGIN</button></th></tr></table></form>
+<form action="dropdown.html" method="post">
+	<table><tr><th colspan="2"><input type="submit" value="New User"></th></tr></table>
+</form></div></center>
+
+</body>
+</html>
